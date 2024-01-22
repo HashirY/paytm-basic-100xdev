@@ -1,4 +1,9 @@
 const mongoose = require("mongoose");
+mongoose
+  .connect(
+    "mongodb+srv://root:root@100xdev.kmbpv1b.mongodb.net/paytm-clone?retryWrites=true&w=majority"
+  )
+  .then(() => console.log("DB connected"));
 
 const userSchema = new mongoose.Schema({
 
